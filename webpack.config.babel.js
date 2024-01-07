@@ -29,19 +29,6 @@ module.exports = {
   },
   resolve: {
     alias: { }
-  },
-  optimization: {
-    /*
-    splitChunks: {
-      cacheGroups: {
-        commons: {
-          test: /[\\/]node_modules[\\/]/,
-          name: "common",
-          chunks: "all"
-        }
-      }
-    }
-    */
   }
 };
 
