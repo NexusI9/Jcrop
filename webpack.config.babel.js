@@ -1,12 +1,4 @@
 import path from 'path';
-import webpack from 'webpack';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
-//const { VueLoaderPlugin } = require('vue-loader');
-
-const extractPlugin = new ExtractTextPlugin({
-  filename: 'style.css',
-  disable: process.env.NODE_ENV === 'development',
-});
 
 module.exports = {
   entry: {
@@ -50,18 +42,6 @@ module.exports = {
       }
     }
     */
-  },
-  // this makes sure 'jQuery' is available to any jQuery plugin you might want
-  // to load (including Foundation files) regardless of how they are written
-  plugins: [
-    /*
-    new VueLoaderPlugin(),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
-    })
-    */
-  ]
+  }
 };
 
